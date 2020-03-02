@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Map</title>
+  <!-- Favicon -->
+  <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Argon CSS -->
+  <link type="text/css" href="./assets/css/argon.css?v=1.1.0" rel="stylesheet">
+<style>
+select {
+width: 200px;
+height:30px;
+
+padding: .1px .5px;
+border: 1px solid #999;
+font-family: inherit;
+background: url('./assets/img/theme/arrow.jpg') no-repeat 100% 80%;
+border-radius: 0px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+color:white;
+
+}
+option {
+
+color:black;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="./index.html">
+          <img alt="image" src="./assets/img/brand/white.png">
+        </a>
+
+    </nav>
+  </header>
+  <main>
+
+    <div class="position-relative">
+      <!-- Hero for FREE version -->
+      <section class="section section-lg section-hero section-shaped">
+        <!-- Background circles -->
+        <div class="shape shape-style-1 shape-primary">
+			
+		
+
+        </div>
+        <form action="#">
+        <div >
+        <p style="color:white;text-align:center;"><strong>선거 지역 및 기본정보를 선택해주세요 </strong></p>
+        <p style="text-align: center;" id="first">
+        <img id="map" src="./assets/img/theme/seoul_map.png" border="0" width="700" height="470" orgWidth="700" orgHeight="470"  class="map" usemap="#Map"  alt="" style="float:center;"/>
+		<map name="Map" id="Map">
+		<area shape="rect" coords="698,468,700,470" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_[msg]Er" />
+		<area  alt="노원구" title="노원구" href="#" shape="poly" coords="467,19,464,23,456,23,453,29,447,29,438,35,436,35,435,44,427,63,437,77,441,90,443,105,442,114,436,117,432,114,431,111,425,116,423,129,431,137,433,143,442,151,448,156,459,154,464,153,480,142,492,151,502,144,498,138,515,124,508,108,498,105,491,108,487,106,490,95,475,87,475,82,488,81,492,79,487,62,487,54,482,50,490,41,490,35,485,30,475,32,471,31,477,24,475,21" style="outline:none;" target="_self"  id='nowon'/>
+		<area  alt="노원구" title="노원구" href="#" shape="poly" coords="493,154,481,146,462,157,464,166,462,176,458,182,455,184,464,203,471,216,470,227,478,225,487,231,497,224,496,214,507,207,510,195,519,188,514,180,518,172,523,171,515,164,519,150,505,145" style="outline:none;" target="_self"  id='jungrang'/>
+		<area  alt="도봉구" title="도봉구" href="#" shape="poly" coords="423,62,432,43,431,38,435,28,426,27,421,23,409,29,402,13,393,14,387,9,377,15,379,24,374,28,374,39,373,44,382,51,391,61,382,87,384,96,394,98,405,106,413,120,420,126,427,107,433,106,437,113,441,108,437,84" style="outline:none;" target="_self"  id='dobong'/>
+		<area  alt="강동구" title="강동구" href="#" shape="poly" coords="591,209,583,213,554,229,543,231,538,236,516,244,517,255,519,264,514,274,527,279,529,290,521,297,529,306,536,305,555,315,558,312,558,306,566,302,566,289,584,267,594,271,605,267,604,244,597,228,593,224,597,216" style="outline:none;" target="_self"  id='gangdong'/>
+		<area  alt="강북구" title="강북구" href="#" shape="poly" coords="370,41,364,40,360,44,352,45,349,50,355,60,356,71,349,78,335,86,341,99,345,115,352,122,362,125,366,133,377,141,378,153,389,152,394,161,402,159,407,163,419,147,424,146,429,137,407,119,402,107,393,101,382,98,378,90,388,62,378,57,378,52" style="outline:none;" target="_self" id='gangbuc'/>
+		</map>>
+		</p>
+		
+		<p style="text-align: center; display:none;" id="second">
+<img id="Image-Maps-Com-image-maps-2019-08-16-190416" src="./assets/img/theme/nowongu_last.png" border="0" width="483" height="499" orgWidth="483" orgHeight="499" usemap="#image-maps-2019-08-16-190416" alt="" />
+<map name="image-maps-2019-08-16-190416" id="ImageMapsCom-image-maps-2019-08-16-190416">
+<area shape="rect" coords="481,497,483,499" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+<area  id="sang" alt="상계동" title="" href="#" shape="poly" coords="340,269,337,258,326,246,325,235,330,225,347,209,346,198,343,188,342,185,351,178,350,170,362,155,356,144,335,121,332,118,331,114,338,100,344,89,356,87,362,80,362,71,355,62,333,61,310,55,288,43,276,14,266,10,221,16,209,15,201,20,180,19,162,6,147,9,131,32,120,34,83,41,74,58,78,84,57,126,56,136,55,148,71,200,70,216,94,314,106,335,114,338,122,307,135,289,154,279,187,259,194,239,207,241,216,250,234,257,247,260,254,257,276,265,302,259,319,268" style="outline:none;" target="_self"     />
+<area  id="gong" alt="공릉동" title="" href="#" shape="poly" coords="458,355,445,351,440,332,426,318,397,317,387,311,345,313,338,326,320,333,294,333,282,339,264,337,255,353,240,358,232,374,216,381,195,385,185,386,175,394,166,399,188,428,196,462,204,458,212,464,229,459,250,457,271,444,290,452,308,459,324,464,342,456,354,456,373,450,392,456,400,456,407,449,405,436,411,423,419,422,441,398,456,382,461,372" style="outline:none;" target="_self"     />
+<area  id="jung" alt="중계동" title="" href="#" shape="poly" coords="339,268,337,279,331,283,333,298,348,311,332,326,305,329,278,336,276,330,264,329,256,314,238,309,226,299,222,290,201,298,189,308,182,314,181,330,173,328,163,340,155,336,142,345,125,344,112,336,114,314,140,286,191,255,193,243,209,243,226,253,249,257,273,265,306,263" style="outline:none;" target="_self"     />
+<area  id="moon" alt="월계동" title="" href="#" shape="poly" coords="93,312,88,321,74,310,67,291,62,293,55,304,42,315,35,322,36,333,21,338,20,350,13,363,18,382,31,391,45,391,59,408,66,426,81,430,89,444,108,461,131,476,168,467,188,478,197,474,194,459,186,430,171,399,161,399,147,379,132,354,117,337,103,335" style="outline:none;" target="_self"     />
+<area  id="ha" alt="하계동" title="" href="#" shape="poly" coords="221,291,199,297,189,308,182,316,181,331,174,330,169,338,126,341,136,359,165,398,188,384,202,381,216,379,234,366,240,355,252,353,261,338,274,338,275,335,263,331,259,317,249,314,239,312,230,308" style="outline:none;" target="_self"     />
+</map>
+		
+		</p>
+		
+		<div style="background-color: rgba( 00, 00, 00, 0.4); width: 800px; height: 470px; margin: auto; padding-top: 20px;">
+		<p id='text' style="color:white;text-align:center;"><strong>위 지도에서 지역을 클릭해주세요!</strong></p>
+        <p style="color:white;text-align:center;"><strong>요일을 선택해주세요 : </strong>
+        <select name="day" id="day">
+        	<option value="Monday">월</option>
+        	<option value="Tuesday">화</option>
+        	<option value="Wednesday">수</option>
+        	<option value="Thursday">목</option>
+        	<option value="Friday">금</option>
+        	<option value="Saturday">토</option>
+        	<option value="Sunday">일</option>
+        </select>
+        </p>
+        <p style="color:white;text-align:center;"><strong>시간을 선택해주세요 : </strong>
+        <select name="start_time" id="start_time">
+        	<option value="00">00시</option>
+        	<option value="01">01시</option>
+        	<option value="02">02시</option>
+        	<option value="03">03시</option>
+        	<option value="04">04시</option>
+        	<option value="05">05시</option>
+        	<option value="06">06시</option>
+        	<option value="07">07시</option>
+        	<option value="08">08시</option>
+        	<option value="09">09시</option>
+        	<option value="10">10시</option>
+        	<option value="11">11시</option>
+        	<option value="12">12시</option>
+        	<option value="13">13시</option>
+        	<option value="14">14시</option>
+        	<option value="15">15시</option>
+        	<option value="16">16시</option>
+        	<option value="17">17시</option>
+        	<option value="18">18시</option>
+        	<option value="19">19시</option>
+        	<option value="20">20시</option>
+        	<option value="21">21시</option>
+        	<option value="22">22시</option>
+        </select>
+        <strong>부터</strong>
+       	<select name="end_time" id="end_time">
+        	<option value="01">01시</option>
+        	<option value="02">02시</option>
+        	<option value="03">03시</option>
+        	<option value="04">04시</option>
+        	<option value="05">05시</option>
+        	<option value="06">06시</option>
+        	<option value="07">07시</option>
+        	<option value="08">08시</option>
+        	<option value="09">09시</option>
+        	<option value="10">10시</option>
+        	<option value="11">11시</option>
+        	<option value="12">12시</option>
+        	<option value="13">13시</option>
+        	<option value="14">14시</option>
+        	<option value="15">15시</option>
+        	<option value="16">16시</option>
+        	<option value="17">17시</option>
+        	<option value="18">18시</option>
+        	<option value="19">19시</option>
+        	<option value="20">20시</option>
+        	<option value="21">21시</option>
+        	<option value="22">22시</option>
+        	<option value="23">23시</option>
+        </select>
+        <strong>까지</strong>
+        </p>
+ 
+        <p style="color:white;text-align:center;"><strong>연령대를 선택해주세요 : </strong>
+        <select name="start_age" id="start_age">
+       		<option value="20">20대</option>
+        	<option value="30">30대</option>
+        	<option value="40">40대</option>
+        	<option value="50">50대</option>
+        	<option value="60">60대</option>
+        </select>
+        <strong>부터</strong>
+        <select name="end_age" id="end_age">
+       		<option value="20">20대</option>
+        	<option value="30">30대</option>
+        	<option value="40">40대</option>
+        	<option value="50">50대</option>
+        	<option value="60">60대</option>
+        </select>
+        <strong>까지	</strong>
+        </p>
+        
+       <p style="color:white;text-align:center;"><strong>데이터 출력최대값을 선택해주세요 : </strong>
+        <select name="max" id="max">
+       		<option value="5">5개</option>
+        	<option value="10">10개</option>
+        	<option value="15">15개</option>
+        	<option value="20">20개</option>
+        	<option value="30">30개</option>
+        	<option value="40">40개</option>
+        	<option value="50">50개</option>
+        </select>
+
+        </p>
+        
+        <p style="color:white;text-align:center;"><strong>성별을 선택해주세요 : </strong>
+	        <input type="checkbox" id="sex_M" value="M" checked="checked">남 
+	        <input type="checkbox" id="sex_W" value="W" >여
+        </p>
+        
+        <p style="text-align: center;">
+        <input type="button" class="btn btn-danger" value="전송" onclick="submits()">
+        <input type="button" class="btn btn-danger" value="취소" id="clear" onClick="window.location.reload()">
+        </p>
+        </div>
+        </div>
+		</form>
+  <!-- Core -->
+
+  <script src="./assets/vendor/jquery/jquery.min.js"></script>
+  <script src="./assets/vendor/popper/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/vendor/headroom/headroom.min.js"></script>
+  <script src="./assets/js/jquery.maphilight.min.js"></script>
+  <!-- Optional JS -->
+  <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Argon JS -->
+  <script src="./assets/js/argon.js?v=1.1.0"></script>
+  
+ <script type="text/javascript"> 
+$(function() { 
+    $.fn.maphilight.defaults = { 
+        fill: true,  //이미지맵 링크에 마우스가 올라오면 색을 넣을 건지 여부 
+        fillColor: 'CD853F',  // 색상지정 
+        fillOpacity: 0.6,  // 투명도 지정 0~1 
+        stroke: true,    // border를 넣을건지 여부 false로 설정하면 이하 옵션 무시됨 
+        strokeColor: 'FFFFF',  //border 색상 
+        strokeOpacity: 1,  //border 투명도 
+        strokeWidth: 5	  //border 폭 
+    } 
+    $('img[usemap]').maphilight(); 
+}); 
+</script> 
+    <script>
+    var ex = document.getElementById('nowon');
+    var ex1 = document.getElementById('jungrang');
+    var ex2 = document.getElementById('dobong');
+    var ex3 = document.getElementById('gangdong');
+    var ex4 = document.getElementById('gangbuc');
+    var img = document.getElementById('map');
+    var first = document.getElementById('first');
+    var second = document.getElementById('second');
+    var arrString;
+    var local = new Array("상계동", "월계동", "중계동", "하계동", "공릉동");
+    var isArr = new Array(false, false, false, false, false);
+	
+
+    var sang = document.getElementById('sang');
+    var moon = document.getElementById('moon');
+    var jung = document.getElementById('jung');
+    var ha = document.getElementById('ha');
+    var gong = document.getElementById('gong');
+    
+    function setText(i) {
+    	isArr[i] = !isArr[i];
+    	arrString = new Array();
+    	
+    	for(var j = 0; j < 5; j++){
+    		if(isArr[j]) {
+    			arrString.push(local[j]);
+    		}
+    	}
+    	
+    	var text = document.getElementById('text').innerHTML=$("#jungrang").attr("alt")+"지역의 "+arrString+"을 선택하셨습니다.";
+	}
+
+    sang.addEventListener('click',function(){
+    	setText(0);
+  	});
+   moon.addEventListener('click',function(){
+   		setText(1);
+  	});
+    jung.addEventListener('click',function(){
+    	setText(2);
+  	});
+    ha.addEventListener('click',function(){
+    	setText(3);
+  	});
+    gong.addEventListener('click',function(){
+    	setText(4);
+  	});
+ 
+    
+    
+  	ex.addEventListener('click',function(){
+
+  		var text = document.getElementById('text').innerHTML=$("#nowon").attr("alt")+"지역을 선택하셨습니다.";
+  		first.style.display="none";
+  		second.style.removeProperty("display");
+
+  	});
+  	ex1.addEventListener('click',function(){
+  		
+  		var text = document.getElementById('text').innerHTML=$("#jungrang").attr("alt")+"지역을 선택하셨습니다.";
+  		
+  	});
+  	ex2.addEventListener('click',function(){
+  		
+  		var text = document.getElementById('text').innerHTML=$("#dobong").attr("alt")+"지역을 선택하셨습니다.";
+  		
+  	});
+  	ex3.addEventListener('click',function(){
+  		
+  		var text = document.getElementById('text').innerHTML=$("#gangdong").attr("alt")+"지역을 선택하셨습니다.";
+  		
+  	});
+  	ex4.addEventListener('click',function(){
+  		
+  		var text = document.getElementById('text').innerHTML=$("#gangbuc").attr("alt")+"지역을 선택하셨습니다.";
+  		
+  	});
+  	
+  	
+  	function submits() {
+		var day = $("#day option:selected").val();
+		var start_time = $("#start_time option:selected").val();
+		var end_time = $("#end_time option:selected").val();
+		var start_age = $("#start_age option:selected").val();
+		var end_age = $("#end_age option:selected").val();
+		var max = $("#max option:selected").val();
+		var dong;
+		var sex_count;
+		var sex_choice;
+		
+		var M = $("input:checkbox[id='sex_M']").is(":checked");
+		var W = $("input:checkbox[id='sex_W']").is(":checked");
+		if(M && W) {
+			sex_count = 1;
+			sex_choice = "M";
+		} else if(M) {
+			sex_count = 0;
+			sex_choice = "M";
+		} else if(W) {
+			sex_count = 0;
+			sex_choice = "W";
+		}
+		
+		if(arrString == null) {
+			dong = local;
+		} else {
+			dong = arrString;
+		}
+		
+		if(start_time >= end_time){
+			alert('끝시간이 시작시간보다 빠르거나 같을 수 없습니다.');
+		} else {
+			/* '#'을 이동할 대상 페이지로 바꿔주세요. */
+			location.href="output.do?day=" + day + "&start_time=" + start_time + "&end_time=" + end_time + "&sex_count=" + sex_count + "&sex_choice=" + sex_choice + "&start_age=" + start_age + "&end_age=" + end_age + "&dong=" + dong + "&max=" + max;
+		}
+	}
+  </script>
+</body>
+
+</html>
